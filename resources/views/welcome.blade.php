@@ -1,0 +1,1 @@
+Ini adalah Blade template untuk halaman selamat datang.
