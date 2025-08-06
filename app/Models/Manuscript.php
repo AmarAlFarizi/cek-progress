@@ -27,7 +27,7 @@ class Manuscript extends Model
 
     public function package()
     {
-        return $this->belongsTo(PublishingPackage::class, 'package_id');
+        return $this->belongsTo(PublishingPackage::class);
     }
 
     public function isbn()
