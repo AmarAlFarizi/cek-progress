@@ -53,6 +53,7 @@ class ManuscriptResource extends Resource
                     'Belum' => 'Belum',
                     'Antri' => 'Antri',
                     'Proses' => 'Proses',
+                    'Revisi' => 'Revisi',
                     'Selesai' => 'Selesai',
                 ])
                 ->required(),
@@ -62,9 +63,15 @@ class ManuscriptResource extends Resource
                     'Belum' => 'Belum',
                     'Antri' => 'Antri',
                     'Proses' => 'Proses',
+                    'Revisi' => 'Revisi',
                     'Selesai' => 'Selesai',
                 ])
                 ->required(),
+            TextInput::make('file_cover')
+                ->label('Link Drive Buku (URL)')
+                ->placeholder('https://link-bukumu.com')
+                ->url()
+                ->columnSpanFull(),
 
             // FileUpload::make('file_naskah')->directory('naskah')->preserveFilenames(),
             // FileUpload::make('file_cover')->directory('cover')->preserveFilenames(),
